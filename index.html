@@ -1,86 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій планер</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Plan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="planner">
+    <header class="top">
+      <h1>WEEKLY PLAN</h1>
 
-    <div class="planner">
-        <header>
-            <h1>Мій планер</h1>
-            <p>Плануй свій день та досягай цілей</p>
-        </header>
+      <div class="header-field">
+        <label for="week">WEEK OF</label>
+        <input id="week" type="text" aria-label="Week of">
+      </div>
 
-        <main class="content">
+      <div class="header-field habit-field">
+        <label for="habit">HEALTHY HABIT</label>
+        <input id="habit" type="text" aria-label="Healthy habit">
+      </div>
 
-            <section class="block date">
-                <h2>Сьогодні</h2>
-                <input type="date">
-                <p>Мої плани на день</p>
-            </section>
+      <div class="top-checks">
+        <label><span>ROCKED IT</span><input type="checkbox"></label>
+        <label><span>ROOM FOR IMPROVEMENT</span><input type="checkbox"></label>
+      </div>
+    </header>
 
-            <section class="block tasks">
-                <h2>Список завдань</h2>
+    <aside class="sidebar">
+      <section class="side-section goals">
+        <h2>TOP 3 GOALS</h2>
+        <div class="task-list">
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+        </div>
+      </section>
 
-                <label><input type="checkbox"> <input type="text" value="Навчання"></label>
-                <label><input type="checkbox"> <input type="text" value="Виконати домашнє завдання"></label>
-                <label><input type="checkbox"> <input type="text" value="Зайнятися програмуванням"></label>
-                <label><input type="checkbox"> <input type="text" value="Прочитати книгу"></label>
-                <label><input type="checkbox"> <input type="text" value="Відпочити"></label>
-            </section>
+      <section class="side-section everything">
+        <h2>EVERYTHING ELSE</h2>
+        <div class="task-list">
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+        </div>
+      </section>
 
-            <section class="block schedule">
-                <h2>Розклад</h2>
+      <section class="side-section next-week">
+        <h2>NEXT WEEK</h2>
+        <div class="task-list">
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+          <label class="task"><input type="checkbox"><span contenteditable="true"></span></label>
+        </div>
+      </section>
+    </aside>
 
-                <div class="schedule-item">
-                    <input type="time" value="09:00">
-                    <input type="text" value="Сніданок">
-                </div>
+    <section class="calendar" aria-label="Weekly calendar">
+      <article class="day monday">
+        <h2>MONDAY <input type="checkbox" aria-label="Monday completed"></h2>
+        <div class="day-notes" contenteditable="true" aria-label="Monday notes"></div>
+      </article>
+      <article class="day tuesday">
+        <h2>TUESDAY <input type="checkbox" aria-label="Tuesday completed"></h2>
+        <div class="day-notes" contenteditable="true" aria-label="Tuesday notes"></div>
+      </article>
+      <article class="day wednesday">
+        <h2>WEDNESDAY <input type="checkbox" aria-label="Wednesday completed"></h2>
+        <div class="day-notes" contenteditable="true" aria-label="Wednesday notes"></div>
+      </article>
+      <article class="day thursday">
+        <h2>THURSDAY <input type="checkbox" aria-label="Thursday completed"></h2>
+        <div class="day-notes" contenteditable="true" aria-label="Thursday notes"></div>
+      </article>
+      <article class="day friday">
+        <h2>FRIDAY <input type="checkbox" aria-label="Friday completed"></h2>
+        <div class="day-notes" contenteditable="true" aria-label="Friday notes"></div>
+      </article>
+      <article class="day saturday">
+        <h2>SATURDAY <input type="checkbox" aria-label="Saturday completed"></h2>
+        <div class="day-notes" contenteditable="true" aria-label="Saturday notes"></div>
+      </article>
+      <article class="day sunday">
+        <h2>SUNDAY <input type="checkbox" aria-label="Sunday completed"></h2>
+        <div class="day-notes" contenteditable="true" aria-label="Sunday notes"></div>
+      </article>
+    </section>
 
-                <div class="schedule-item">
-                    <input type="time" value="10:00">
-                    <input type="text" value="Навчання">
-                </div>
-
-                <div class="schedule-item">
-                    <input type="time" value="13:00">
-                    <input type="text" value="Обід">
-                </div>
-
-                <div class="schedule-item">
-                    <input type="time" value="15:00">
-                    <input type="text" value="Робота над проєктом">
-                </div>
-
-                <div class="schedule-item">
-                    <input type="time" value="18:00">
-                    <input type="text" value="Відпочинок">
-                </div>
-            </section>
-
-            <section class="block notes">
-                <h2>Нотатки</h2>
-                <textarea placeholder="Запиши свої думки..."></textarea>
-            </section>
-
-            <section class="block goals">
-                <h2>Мої цілі</h2>
-                <label><input type="checkbox"> Вивчити нову тему</label>
-                <label><input type="checkbox"> Займатися спортом</label>
-                <label><input type="checkbox"> Прочитати 20 сторінок</label>
-            </section>
-
-        </main>
-
-        <footer>
-            <p>Мій планер | 2026</p>
-        </footer>
-    </div>
-
+    <footer class="bottom-bar"></footer>
+  </main>
 </body>
 </html>
-s
