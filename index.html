@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій планер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="planner">
+        <header>
+            <h1>Мій планер</h1>
+            <p>Плануй свій день та досягай цілей</p>
+        </header>
+
+        <main class="content">
+
+            <section class="block date">
+                <h2>Сьогодні</h2>
+                <input type="date">
+                <p>Мої плани на день</p>
+            </section>
+
+            <section class="block tasks">
+                <h2>Список завдань</h2>
+
+                <label><input type="checkbox"> <input type="text" value="Навчання"></label>
+                <label><input type="checkbox"> <input type="text" value="Виконати домашнє завдання"></label>
+                <label><input type="checkbox"> <input type="text" value="Зайнятися програмуванням"></label>
+                <label><input type="checkbox"> <input type="text" value="Прочитати книгу"></label>
+                <label><input type="checkbox"> <input type="text" value="Відпочити"></label>
+            </section>
+
+            <section class="block schedule">
+                <h2>Розклад</h2>
+
+                <div class="schedule-item">
+                    <input type="time" value="09:00">
+                    <input type="text" value="Сніданок">
+                </div>
+
+                <div class="schedule-item">
+                    <input type="time" value="10:00">
+                    <input type="text" value="Навчання">
+                </div>
+
+                <div class="schedule-item">
+                    <input type="time" value="13:00">
+                    <input type="text" value="Обід">
+                </div>
+
+                <div class="schedule-item">
+                    <input type="time" value="15:00">
+                    <input type="text" value="Робота над проєктом">
+                </div>
+
+                <div class="schedule-item">
+                    <input type="time" value="18:00">
+                    <input type="text" value="Відпочинок">
+                </div>
+            </section>
+
+            <section class="block notes">
+                <h2>Нотатки</h2>
+                <textarea placeholder="Запиши свої думки..."></textarea>
+            </section>
+
+            <section class="block goals">
+                <h2>Мої цілі</h2>
+                <label><input type="checkbox"> Вивчити нову тему</label>
+                <label><input type="checkbox"> Займатися спортом</label>
+                <label><input type="checkbox"> Прочитати 20 сторінок</label>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Мій планер | 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+s

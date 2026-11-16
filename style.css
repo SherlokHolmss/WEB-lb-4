@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #e9edf2;
+    padding: 30px;
+    color: #333;
+}
+
+.planner {
+    max-width: 1100px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+header p {
+    color: #888;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.block {
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.block h2 {
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.date {
+    text-align: center;
+}
+
+.date input {
+    margin: 10px;
+}
+
+.tasks label,
+.goals label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    padding: 7px;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    border-bottom: 1px solid #3498db;
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    accent-color: #3498db;
+}
+
+input[type="date"],
+input[type="time"] {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.schedule-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.schedule-item input[type="time"] {
+    width: 110px;
+}
+
+.notes textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.notes textarea:focus {
+    border-color: #3498db;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #999;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    .planner {
+        padding: 15px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
