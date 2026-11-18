@@ -20,8 +20,8 @@ body {
   background: #fff;
   border: 3px solid #c9c9c9;
   display: grid;
-  grid-template-columns: minmax(205px, 28%) minmax(0, 1fr);
-  grid-template-rows: 76px minmax(620px, 1fr) 15px;
+  grid-template-columns: minmax(200px, 28%) minmax(0, 1fr);
+  grid-template-rows: 70px minmax(600px, 1fr) 15px;
   grid-template-areas:
     "header header"
     "sidebar calendar"
@@ -31,7 +31,7 @@ body {
 .top {
   grid-area: header;
   display: grid;
-  grid-template-columns: minmax(210px, 1.1fr) minmax(130px, .8fr) minmax(190px, 1.2fr) minmax(190px, 1fr);
+  grid-template-columns: minmax(200px, 1.1fr) minmax(130px, .8fr) minmax(200px, 1.2fr) minmax(200px, 1fr);
   align-items: center;
   gap: 18px;
   padding: 0 16px;
